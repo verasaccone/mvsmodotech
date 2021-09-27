@@ -1,0 +1,37 @@
+.formularioContacto {
+    display: block;
+    color: black;
+    background: rgb(26, 175, 166);
+    background: radial-gradient(circle, rgba(26, 175, 166, 1) 0%, rgba(25, 164, 156, 1) 100%);
+    font-size: 2rem;
+    width: 100rem;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+    box-shadow: 0.7rem 1rem 3rem $gris;
+    text-align: center;
+
+    .formularioContacto__datos {
+        font-size: 2rem;
+        width: 90rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 0.1rem solid $gris;
+        margin: 1rem;
+    }
+
+    .formularioContacto__boton {
+        font-size: 2rem;
+        height: 6rem;
+        width: 15rem;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+
+    .formularioContacto_boton :hover {
+        cursor: pointer;
+        transform: translateY(-0.5rem);
+        transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    }
+}

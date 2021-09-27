@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactate con MODOTECH y te asesoraremos sobre cómo armar tu computadora o tu rig de minería.">
+    <meta name="keywords" content="INFORMATICA, COMPONENTES, PLACAS DE VIDEO, NOTEBOOKS, GAMER, MINERIA, SANTA FE">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="header__encabezado navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="header__logo" href="../index.html"><img src="../images/logo_sin_fondo.png" alt="logo modotech"
+                        width="100%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="header__nav collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="placas_video.html" id="navbarDropdownMenuLink"
+                                role="button" aria-expanded="false">
+                                Placas de Video
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="subitem_E3090.html">Nvidia EVGA FTW3 RTX 3090
+                                        Ultra</a></li>
+                                <li><a class="dropdown-item" href="subitem_G3090.html">Nvidia Gigabyte RTX 3090
+                                        Turbo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="notebooks.html" id="navbarDropdownMenuLink"
+                                role="button" aria-expanded="false">
+                                Notebooks
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="subitem_Asus.html">Asus ZenBook Pro Duo 15 OLED</a>
+                                </li>
+                                <li><a class="dropdown-item" href="subitem_Gigabyte.html">Gigabyte AERO 15 OLED
+                                        Creator</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="componentes.html">Componentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header__bannerAnimado">
+            <video src="../images/banner_animado.mp4" autoplay muted width="100%"></video>
+        </div>
+
+    </header>
+
+    <section class="formularioContacto">
+        <p>Complete este formulario si desea que nos contactemos</p>
+        <form>
+            <div>
+                <input required name="nombre" id="nombre" type="text" class="formularioContacto__datos" placeholder="Nombre y Apellido:">
+            </div>
+            <div>
+                <input required name="email" id="email" type="email" class="formularioContacto__datos" placeholder="Mail:">
+            </div>
+            <div>
+                <label for="provincia">Seleccione su provincia:</label>
+                <select required name="provincia" class="datos">
+                    <option value="buenosaires">Buenos Aires</option>
+                    <option value="catamarca">Catamarca</option>
+                    <option value="chaco">Chaco</option>
+                    <option value="chubut">Chubut</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="corrientes">Corrientes</option>
+                    <option value="entrerios">Entre Ríos</option>
+                    <option value="formosa">Formosa</option>
+                    <option value="jujuy">Jujuy</option>
+                    <option value="lapampa">La Pampa</option>
+                    <option value="larioja">La Rioja</option>
+                    <option value="mendoza">Medoza</option>
+                    <option value="misiones">Misiones</option>
+                    <option value="neuquen">Neuquén</option>
+                    <option value="rionegro">Río Negro</option>
+                    <option value="salta">Salta</option>
+                    <option value="sanjuan">San Juan</option>
+                    <option value="sanluis">San Luis</option>
+                    <option value="santacruz">Santa Cruz</option>
+                    <option value="santafe">Santa Fe</option>
+                    <option value="santiagodelestero">Santiago del Estero</option>
+                    <option value="tierradelfuego">Tierra del Fuego</option>
+                    <option value="tucuman">Tucumán</option>
+                </select>
+            </div>
+
+            <div>
+                <textarea required name="consulta" id="consulta" cols="50" rows="20" maxlength="250" class="formularioContacto__datos"
+                    placeholder="Indique su consulta:"></textarea>
+            </div>
+
+            <div>
+                <input type="reset" value="Borrar" class="formularioContacto__boton">
+                <input type="submit" value="Enviar" class="formularioContacto__boton">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <nav>
+            <section class="footer__redesContacto">
+                <div>
+                    <a href="https://wa.me/+5493426118240" target="_blank"><img src="../images/whatsapp.png"
+                            alt="logo whatsapp" width="35"></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/mvsmodotech" target="_blank"><img src="../images/facebook.png"
+                            alt="logo facebook" width="35"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/mvsmodotech/" target="_blank"><img src="../images/instagram.png"
+                            alt="logo instagram" width="35"></a>
+                </div>
+                <div class="googleMaps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.703898064652!2d-60.72173118515084!3d-31.64195671436436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9b4e618780f%3A0xcef8dc7813e2f527!2sParaguay%20%26%20Catamarca%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1629241493179!5m2!1ses-419!2sar"
+                        width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+            <div class="footer__volverInicio">
+                <a href="contacto.html">Volver al inicio</a>
+            </div>
+
+        </nav>
+
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

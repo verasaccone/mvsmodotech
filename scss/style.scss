@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /*hace que los 16px sean 10px = 1rem*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+$JosefinSans: 'Josefin Sans',
+sans-serif;
+$celeste: #19a49c;
+$blanco: #ffffff;
+$gris: #6666;
+
+@import "index";
+
+@import "pages_contacto";
+
+@import "pages_placas_video";
+
+@import "pages_notebooks";
+
+@import "pages_componentes";
+
+@import "404";
+
+@import "media_queries";

@@ -1,0 +1,17 @@
+@for $i from 1 through 3 {
+    .box-#{$i} {
+        width: 50rem;
+        background-color: $celeste;
+        color: $blanco;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        font-family: $JosefinSans;
+        align-self: center;
+        text-align: center;
+
+    }
+}
+
+.box-3 {
+    margin-bottom: 5rem;
+}

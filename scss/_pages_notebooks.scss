@@ -1,0 +1,35 @@
+.header__carousel {
+    width: 600px;
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.linkNotebooks {
+    .linkNotebooks__title {
+        color: black;
+        font-size: 3rem;
+        font-family: $JosefinSans;
+        text-align: center;
+    }
+
+    .linkNotebooks__img {
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        height: 60vh;
+
+        img {
+            width: 30rem;
+            border: 0.5rem solid $gris;
+            margin: 4rem;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1, 1.1);
+                transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+            }
+        }
+    }
+    
+}
+
