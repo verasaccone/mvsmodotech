@@ -191,6 +191,46 @@ html {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
+.header__imagesLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+  -webkit-animation: bounce;
+          animation: bounce;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.header__imagesRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 18rem;
+  -webkit-animation: bounce;
+          animation: bounce;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.header__grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header__imagesLeft header__bannerAnimado header__imagesRight";
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
 .tablaCaracteristicas {
   display: -webkit-box;
   display: -ms-flexbox;

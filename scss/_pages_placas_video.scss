@@ -32,6 +32,30 @@
     }
 }
 
+.header__imagesLeft {
+   display: flex;
+   flex-direction: column;
+   width: 20rem;
+   animation: bounce;
+   animation-duration: 3s;
+}
+
+.header__imagesRight {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    animation: bounce;
+    animation-duration: 3s; 
+}
+
+.header__grilla {
+    display: grid;
+    grid-template-areas: 
+    "header__imagesLeft header__bannerAnimado header__imagesRight";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100%;
+}
+
 .tablaCaracteristicas {
     display: flex;
     flex-flow: row wrap;
