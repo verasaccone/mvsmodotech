@@ -4,6 +4,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -25,7 +27,6 @@ html {
   background: #fafafa;
   background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
   background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
-  height: 100vh;
 }
 
 .header .header__encabezado {
@@ -66,22 +67,6 @@ html {
 }
 
 /*fin diseño barra navegación*/
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #fafafa;
-  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
-  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
-  font-size: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-  letter-spacing: 0.4rem;
-}
-
 .quienesSomos {
   display: block;
   color: black;
@@ -206,6 +191,126 @@ body {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
+.tablaCaracteristicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tablaCaracteristicas__title {
+  display: block;
+  font-size: 3rem;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tablaCaracteristicas__box-1 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas__box-2 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas__box-3 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas__box-4 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas__box-5 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas__box-6 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas__box-7 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas__box-8 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas__box-9 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas__box-1 img {
+  width: 6rem;
+}
+
+.tablaCaracteristicas__box-2 img {
+  width: 6rem;
+}
+
+.tablaCaracteristicas__box-3 img {
+  width: 6rem;
+}
+
+.tablaCaracteristicas__box-4 img {
+  width: 6rem;
+}
+
+.tablaCaracteristicas__box-5 img {
+  width: 6rem;
+}
+
+.tablaCaracteristicas__box-6 img {
+  width: 6rem;
+}
+
+.tablaCaracteristicas__box-7 img {
+  width: 6rem;
+}
+
+.tablaCaracteristicas__box-8 img {
+  width: 6rem;
+}
+
+.tablaCaracteristicas__box-9 img {
+  width: 6rem;
+}
+
 .header__carousel {
   width: 600px;
   -ms-flex-item-align: center;
@@ -287,6 +392,33 @@ body {
 
 .box-3 {
   margin-bottom: 5rem;
+}
+
+.error404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+  letter-spacing: 0.4rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.error404 h1 {
+  font-size: 10rem;
+}
+
+.error404 p {
+  font-size: 7rem;
+}
+
+.error404 a {
+  font-size: 5rem;
 }
 
 @media (max-width: 600px) {
