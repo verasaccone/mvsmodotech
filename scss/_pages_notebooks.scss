@@ -33,3 +33,77 @@
     
 }
 
+.tablaCaracteristicas {
+    .tablaCaracteristicas__title {
+        display: block;
+        font-size: 3rem;
+        background: rgb(250, 250, 250);
+        background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+        color: black;
+        font-family: $JosefinSans;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .tablaCaracteristicas__grilla {
+        display: grid;
+        grid-template-areas:
+            "tablaCaracteristicas__imagesLeft tablaCaracteristicas__contenido tablaCaracteristicas__imagesRight";
+        grid-template-columns: 20% 50% 20%;
+        grid-template-rows: 100%;
+
+        .tablaCaracteristicas__imagesLeft {
+            display: flex;
+            flex-direction: column;
+            background: rgb(250, 250, 250);
+            background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+            color: black;
+            grid-area: tablaCaracteristicas__imagesLeft;
+
+            img {
+                width: 20rem;
+                border: 0.5rem solid $gris;
+                margin: 4rem;
+            }
+        }
+
+        .tablaCaracteristicas__imagesRight {
+            display: flex;
+            flex-direction: column;
+            background: rgb(250, 250, 250);
+            background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+            color: black;
+            grid-area: tablaCaracteristicas__imagesRight;
+
+            img {
+                width: 20rem;
+                border: 0.5rem solid $gris;
+                margin: 4rem;
+            }
+        }
+
+        .tablaCaracteristicas__contenido {
+            display: flex;
+            flex-flow: row wrap;
+            background: rgb(250, 250, 250);
+            background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+            color: black;
+            font-family: $JosefinSans;
+            justify-content: center;
+            grid-area: tablaCaracteristicas__contenido;
+        }
+
+        @for $i from 1 through 9 {
+            .tablaCaracteristicas__box-#{$i} {
+                width: 50rem;
+                margin: 1rem;
+                font-size: 2rem;
+            }
+
+            img {
+                width: 6rem;
+            }
+        }
+
+    }
+}

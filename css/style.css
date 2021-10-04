@@ -191,6 +191,46 @@ html {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
+.header__carousel {
+  width: 600px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 3rem;
+}
+
+.linkNotebooks .linkNotebooks__title {
+  color: black;
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+.linkNotebooks .linkNotebooks__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  height: 60vh;
+}
+
+.linkNotebooks .linkNotebooks__img img {
+  width: 30rem;
+  border: 0.5rem solid #6666;
+  margin: 4rem;
+}
+
+.linkNotebooks .linkNotebooks__img img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
 .tablaCaracteristicas .tablaCaracteristicas__title {
   display: block;
   font-size: 3rem;
@@ -368,46 +408,6 @@ html {
 
 .tablaCaracteristicas .tablaCaracteristicas__grilla img {
   width: 6rem;
-}
-
-.header__carousel {
-  width: 600px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 3rem;
-}
-
-.linkNotebooks .linkNotebooks__title {
-  color: black;
-  font-size: 3rem;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-}
-
-.linkNotebooks .linkNotebooks__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1rem;
-  height: 60vh;
-}
-
-.linkNotebooks .linkNotebooks__img img {
-  width: 30rem;
-  border: 0.5rem solid #6666;
-  margin: 4rem;
-}
-
-.linkNotebooks .linkNotebooks__img img:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
 .box-1 {
