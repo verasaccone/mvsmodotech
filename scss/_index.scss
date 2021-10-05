@@ -4,7 +4,7 @@
     color: $celeste;
     background: rgb(250, 250, 250);
     background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
-    
+
     .header__encabezado {
         font-family: $JosefinSans;
         background: rgb(26, 175, 166);
@@ -43,9 +43,36 @@
 
 /*fin diseño barra navegación*/
 
+body {
+    background: rgb(250, 250, 250);
+    background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+}
+
+.linksIndex {
+    .linkIndex__notebooks .linkIndex_placas {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 1rem;
+       
+        img {
+            width: 30rem;
+            border: 0.5rem solid $gris;
+            margin: 4rem;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1, 1.1);
+                transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+            }
+        }
+    }
+}
+
 .quienesSomos {
     display: block;
     color: black;
+    font-size: 2rem;
     background: rgb(26, 175, 166);
     background: radial-gradient(circle, rgba(26, 175, 166, 1) 0%, rgba(25, 164, 156, 1) 100%);
     border: 0.5rem solid #33cfc7;
@@ -55,7 +82,7 @@
 
     .quienesSomos__title {
         color: black;
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 3.5rem;
         padding-bottom: 1rem;
         margin: 0 1.5rem 0 0;

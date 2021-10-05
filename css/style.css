@@ -67,9 +67,44 @@ html {
 }
 
 /*fin diseño barra navegación*/
+body {
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+}
+
+.linksIndex .linkIndex__notebooks .linkIndex_placas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.linksIndex .linkIndex__notebooks .linkIndex_placas img {
+  width: 30rem;
+  border: 0.5rem solid #6666;
+  margin: 4rem;
+}
+
+.linksIndex .linkIndex__notebooks .linkIndex_placas img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
 .quienesSomos {
   display: block;
   color: black;
+  font-size: 2rem;
   background: #1aafa6;
   background: radial-gradient(circle, #1aafa6 0%, #19a49c 100%);
   border: 0.5rem solid #33cfc7;
@@ -80,7 +115,7 @@ html {
 
 .quienesSomos .quienesSomos__title {
   color: black;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 3.5rem;
   padding-bottom: 1rem;
   margin: 0 1.5rem 0 0;
