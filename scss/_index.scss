@@ -54,7 +54,7 @@ body {
         flex-flow: row wrap;
         justify-content: center;
         margin: 1rem;
-       
+
         img {
             width: 30rem;
             border: 0.5rem solid $gris;
@@ -68,6 +68,77 @@ body {
         }
     }
 }
+
+.productos {
+    .productos__title {
+        color: black;
+        font-size: 3rem;
+        font-family: $JosefinSans;
+        text-align: center;
+    }
+
+    .productos__grilla {
+        display: grid;
+        grid-template-areas: productos "productos__grillaSubtitle1 productos__grillaSubtitle2"
+            "productos__grillaImg1 productos__grillaImg2"
+            "productos__grillaSubtitle3 productos__grillaSubtitle4"
+            "productos__grillaImg3 productos__grillaImg4";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 40% 10% 40%;
+        color: black;
+        font-size: 2rem;
+        font-family: $JosefinSans;
+
+        .productos__grillaSubtitle1 {
+            grid-area: productos__grillaSubtitle1;
+        }
+
+        .productos__grillaSubtitle2 {
+            grid-area: productos__grillaSubtitle2;
+        }
+
+        .productos__grillaSubtitle3 {
+            grid-area: productos__grillaSubtitle3;
+        }
+
+        .productos__grillaSubtitle4 {
+            grid-area: productos__grillaSubtitle4;
+        }
+
+        .productos__grillaImg1 {
+            grid-area: productos__grillaImg1;
+        }
+
+        .productos__grillaImg2 {
+            grid-area: productos__grillaImg2;
+        }
+
+        .productos__grillaImg3 {
+            grid-area: productos__grillaImg3;
+        }
+
+        .productos__grillaImg4 {
+            grid-area: productos__grillaImg4;
+        }
+
+        @for $i from 1 through 4 {
+            .productos__grillaImg-#{$i} {
+                width: 20rem;
+                border: 0.5rem solid $gris;
+                margin: 4rem;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1, 1.1);
+                    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 .quienesSomos {
     display: block;
