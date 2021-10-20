@@ -12,16 +12,49 @@
         text-align: center;
     }
 
-    .linkNotebooks__img {
-        display: flex;
-        justify-content: center;
-        margin: 1rem;
-        height: 60vh;
+    .linkNotebooks__grilla {
+        display: grid;
+        grid-template-areas:
+            "linkNotebooks__grillaSubtitle1 linkNotebooks__grillaSubtitle2"
+            "linkNotebooks__grillaImg1 linkNotebooks__grillaImg2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 70%;
+        color: black;
+        font-size: 2rem;
+        font-family: $JosefinSans;
 
-        img {
-            width: 30rem;
-            border: 0.5rem solid $gris;
-            margin: 4rem;
+        .linkNotebooks__grillaSubtitle1 {
+            grid-area: linkNotebooks__grillaSubtitle1;
+        }
+
+        .linkNotebooks__grillaSubtitle2 {
+            grid-area: linkNotebooks__grillaSubtitle2;
+        }
+
+        .linkNotebooks__grillaImg1 {
+            grid-area: linkNotebooks__grillaImg1;
+
+            img {
+                width: 20rem;
+                border: 0.5rem solid $gris;
+                margin: 4rem;
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1, 1.1);
+                transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+            }
+        }
+
+        .linkNotebooks__grillaImg2 {
+            grid-area: linkNotebooks__grillaImg2;
+
+            img {
+                width: 20rem;
+                border: 0.5rem solid $gris;
+                margin: 4rem;
+            }
 
             &:hover {
                 cursor: pointer;
@@ -30,7 +63,6 @@
             }
         }
     }
-    
 }
 
 .tablaCaracteristicas {
