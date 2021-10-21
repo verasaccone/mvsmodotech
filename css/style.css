@@ -76,42 +76,44 @@ body {
 .productos {
   font-family: "Josefin Sans", sans-serif;
   color: black;
+  text-align: center;
 }
 
 .productos .productos__title {
   font-size: 4rem;
-  text-align: center;
 }
 
 .productos .productos__grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "subtitle1 Subtitle2" "Img1 Img2" "productos__grillaSubtitle3 productos__grillaSubtitle4" "productos__grillaImg3 productos__grillaImg4";
+      grid-template-areas: "Subtitle1 Subtitle2" "Img1 Img2" "Subtitle3 Subtitle4" "Img3 Img4";
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .productos .productos__grilla .productos__grillaSubtitle1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: subtitle1;
+  grid-area: Subtitle1;
 }
 
 .productos .productos__grilla .productos__grillaSubtitle2 {
-  grid-area: subtitle2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Subtitle2;
 }
 
 .productos .productos__grilla .productos__grillaSubtitle3 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: productos__grillaSubtitle3;
+  grid-area: Subtitle3;
 }
 
 .productos .productos__grilla .productos__grillaSubtitle4 {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
-  grid-area: productos__grillaSubtitle4;
+  grid-area: Subtitle4;
 }
 
 .productos .productos__grilla .productos__grillaImg1 {
@@ -129,22 +131,20 @@ body {
 .productos .productos__grilla .productos__grillaImg3 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  grid-area: productos__grillaImg3;
+  grid-area: Img3;
 }
 
 .productos .productos__grilla .productos__grillaImg4 {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
-  grid-area: productos__grillaImg4;
+  grid-area: Img4;
 }
 
-.productos .productos__grilla .productos__grillaImg-1 {
-  width: 2rem;
-  border: 0.5rem solid #6666;
-  margin: 4rem;
+.productos .productos__grilla .productos__grillaImg1 {
+  margin: 1rem;
 }
 
-.productos .productos__grilla .productos__grillaImg-1:hover {
+.productos .productos__grilla .productos__grillaImg1:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -152,13 +152,15 @@ body {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-.productos .productos__grilla .productos__grillaImg-2 {
-  width: 2rem;
-  border: 0.5rem solid #6666;
-  margin: 4rem;
+.productos .productos__grilla .productos__grillaImg1 img {
+  border: 0.3rem solid #6666;
 }
 
-.productos .productos__grilla .productos__grillaImg-2:hover {
+.productos .productos__grilla .productos__grillaImg2 {
+  margin: 1rem;
+}
+
+.productos .productos__grilla .productos__grillaImg2:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -166,13 +168,15 @@ body {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-.productos .productos__grilla .productos__grillaImg-3 {
-  width: 2rem;
-  border: 0.5rem solid #6666;
-  margin: 4rem;
+.productos .productos__grilla .productos__grillaImg2 img {
+  border: 0.3rem solid #6666;
 }
 
-.productos .productos__grilla .productos__grillaImg-3:hover {
+.productos .productos__grilla .productos__grillaImg3 {
+  margin: 1rem;
+}
+
+.productos .productos__grilla .productos__grillaImg3:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -180,18 +184,24 @@ body {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-.productos .productos__grilla .productos__grillaImg-4 {
-  width: 2rem;
-  border: 0.5rem solid #6666;
-  margin: 4rem;
+.productos .productos__grilla .productos__grillaImg3 img {
+  border: 0.3rem solid #6666;
 }
 
-.productos .productos__grilla .productos__grillaImg-4:hover {
+.productos .productos__grilla .productos__grillaImg4 {
+  margin: 1rem;
+}
+
+.productos .productos__grilla .productos__grillaImg4:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.productos .productos__grilla .productos__grillaImg4 img {
+  border: 0.3rem solid #6666;
 }
 
 .quienesSomos {

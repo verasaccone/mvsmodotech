@@ -51,36 +51,37 @@ body {
 .productos {
     font-family: $JosefinSans;
     color: black;
+    text-align: center;
 
     .productos__title {
         font-size: 4rem;
-        text-align: center;
     }
 
     .productos__grilla {
         display: grid;
         grid-template-areas:
-            "subtitle1 Subtitle2"
+            "Subtitle1 Subtitle2"
             "Img1 Img2"
-            "productos__grillaSubtitle3 productos__grillaSubtitle4"
-            "productos__grillaImg3 productos__grillaImg4";
+            "Subtitle3 Subtitle4"
+            "Img3 Img4";
         grid-template-columns: 50% 50%;
-        font-size: 3rem;
+        font-size: 2rem;
+        
 
         .productos__grillaSubtitle1 {
-            grid-area: subtitle1;
+            grid-area: Subtitle1;
         }
 
         .productos__grillaSubtitle2 {
-            grid-area: subtitle2;
+            grid-area: Subtitle2;
         }
 
         .productos__grillaSubtitle3 {
-            grid-area: productos__grillaSubtitle3;
+            grid-area: Subtitle3;
         }
 
         .productos__grillaSubtitle4 {
-            grid-area: productos__grillaSubtitle4;
+            grid-area: Subtitle4;
         }
 
         .productos__grillaImg1 {
@@ -92,23 +93,25 @@ body {
         }
 
         .productos__grillaImg3 {
-            grid-area: productos__grillaImg3;
+            grid-area: Img3;
         }
 
         .productos__grillaImg4 {
-            grid-area: productos__grillaImg4;
+            grid-area: Img4;
         }
 
         @for $i from 1 through 4 {
-            .productos__grillaImg-#{$i} {
-                width: 2rem;
-                border: 0.5rem solid $gris;
-                margin: 4rem;
+            .productos__grillaImg#{$i} {
+                margin: 1rem;
 
                 &:hover {
                     cursor: pointer;
                     transform: scale(1.1, 1.1);
                     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                }
+
+                img {
+                    border: 0.3rem solid $gris;
                 }
             }
         }
