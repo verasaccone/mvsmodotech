@@ -48,46 +48,24 @@ body {
     background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
 }
 
-.linksIndex {
-    .linkIndex__notebooks .linkIndex_placas {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        margin: 1rem;
-
-        img {
-            width: 30rem;
-            border: 0.5rem solid $gris;
-            margin: 4rem;
-
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.1, 1.1);
-                transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-            }
-        }
-    }
-}
-
 .productos {
+    font-family: $JosefinSans;
+    color: black;
+
     .productos__title {
-        color: black;
-        font-size: 3rem;
-        font-family: $JosefinSans;
+        font-size: 4rem;
         text-align: center;
     }
 
     .productos__grilla {
         display: grid;
-        grid-template-areas: productos "productos__grillaSubtitle1 productos__grillaSubtitle2"
+        grid-template-areas:
+            "productos__grillaSubtitle1 productos__grillaSubtitle2"
             "productos__grillaImg1 productos__grillaImg2"
             "productos__grillaSubtitle3 productos__grillaSubtitle4"
             "productos__grillaImg3 productos__grillaImg4";
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10% 40% 10% 40%;
-        color: black;
-        font-size: 2rem;
-        font-family: $JosefinSans;
+        font-size: 3rem;
 
         .productos__grillaSubtitle1 {
             grid-area: productos__grillaSubtitle1;
@@ -123,7 +101,7 @@ body {
 
         @for $i from 1 through 4 {
             .productos__grillaImg-#{$i} {
-                width: 20rem;
+                width: 2rem;
                 border: 0.5rem solid $gris;
                 margin: 4rem;
 
@@ -136,9 +114,6 @@ body {
         }
     }
 }
-
-
-
 
 .quienesSomos {
     display: block;
