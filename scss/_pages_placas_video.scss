@@ -1,59 +1,50 @@
-.linkPlacas {
-    .linkPlacas__title {
-        color: black;
+.placas {
+    font-family: $JosefinSans;
+    color: black;
+    text-align: center;
+
+    .placas__title {
         font-size: 3rem;
-        font-family: $JosefinSans;
-        text-align: center;
     }
 
-    .linkPlacas__grilla {
+    .placas__grilla {
         display: grid;
         grid-template-areas:
-            "linkPlacas__grillaSubtitle1 linkPlacas__grillaSubtitle2"
-            "linkPlacas__grillaImg1 linkPlacas__grillaImg2";
+            "pSubtitle1 pSubtitle2"
+            "pImg1 pImg2";
         grid-template-columns: 50% 50%;
-        grid-template-rows: 30% 70%;
-        color: black;
         font-size: 2rem;
-        font-family: $JosefinSans;
-
-        .linkPlacas__grillaSubtitle1 {
-            grid-area: linkPlacas__grillaSubtitle1;
+        
+        .placas__grillaSubtitle1 {
+            grid-area: pSubtitle1;
         }
 
-        .linkPlacas__grillaSubtitle2 {
-            grid-area: linkPlacas__grillaSubtitle2;
+        .placas__grillaSubtitle2 {
+            grid-area: pSubtitle2;
         }
 
-        .linkPlacas__grillaImg1 {
-            grid-area: linkPlacas__grillaImg1;
-
-            img {
-                width: 20rem;
-                border: 0.5rem solid $gris;
-                margin: 4rem;
-            }
-
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.1, 1.1);
-                transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-            }
+        .placas__grillaImg1 {
+            grid-area: pImg1;
         }
 
-        .linkPlacas__grillaImg2 {
-            grid-area: linkPlacas__grillaImg2;
+        .placas__grillaImg2 {
+            grid-area: pImg2;
+        }
 
-            img {
-                width: 20rem;
-                border: 0.5rem solid $gris;
-                margin: 4rem;
-            }
+        @for $i from 1 through 2 {
+            .placas__grillaImg#{$i} {
+                margin: 1rem;
+                margin-bottom: 3rem;
 
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.1, 1.1);
-                transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1, 1.1);
+                    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                }
+
+                img {
+                    border: 0.3rem solid $gris;
+                }
             }
         }
     }

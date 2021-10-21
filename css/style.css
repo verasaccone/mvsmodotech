@@ -289,51 +289,55 @@ body {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-.linkPlacas .linkPlacas__title {
-  color: black;
-  font-size: 3rem;
+.placas {
   font-family: "Josefin Sans", sans-serif;
+  color: black;
   text-align: center;
 }
 
-.linkPlacas .linkPlacas__grilla {
+.placas .placas__title {
+  font-size: 3rem;
+}
+
+.placas .placas__grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "linkPlacas__grillaSubtitle1 linkPlacas__grillaSubtitle2" "linkPlacas__grillaImg1 linkPlacas__grillaImg2";
+      grid-template-areas: "pSubtitle1 pSubtitle2" "pImg1 pImg2";
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 30% 70%;
-      grid-template-rows: 30% 70%;
-  color: black;
   font-size: 2rem;
-  font-family: "Josefin Sans", sans-serif;
 }
 
-.linkPlacas .linkPlacas__grilla .linkPlacas__grillaSubtitle1 {
+.placas .placas__grilla .placas__grillaSubtitle1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: linkPlacas__grillaSubtitle1;
+  grid-area: pSubtitle1;
 }
 
-.linkPlacas .linkPlacas__grilla .linkPlacas__grillaSubtitle2 {
+.placas .placas__grilla .placas__grillaSubtitle2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: linkPlacas__grillaSubtitle2;
+  grid-area: pSubtitle2;
 }
 
-.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg1 {
+.placas .placas__grilla .placas__grillaImg1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: linkPlacas__grillaImg1;
+  grid-area: pImg1;
 }
 
-.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg1 img {
-  width: 20rem;
-  border: 0.5rem solid #6666;
-  margin: 4rem;
+.placas .placas__grilla .placas__grillaImg2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pImg2;
 }
 
-.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg1:hover {
+.placas .placas__grilla .placas__grillaImg1 {
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.placas .placas__grilla .placas__grillaImg1:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -341,24 +345,25 @@ body {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: linkPlacas__grillaImg2;
+.placas .placas__grilla .placas__grillaImg1 img {
+  border: 0.3rem solid #6666;
 }
 
-.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg2 img {
-  width: 20rem;
-  border: 0.5rem solid #6666;
-  margin: 4rem;
+.placas .placas__grilla .placas__grillaImg2 {
+  margin: 1rem;
+  margin-bottom: 3rem;
 }
 
-.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg2:hover {
+.placas .placas__grilla .placas__grillaImg2:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.placas .placas__grilla .placas__grillaImg2 img {
+  border: 0.3rem solid #6666;
 }
 
 .tablaCaracteristicas .tablaCaracteristicas__title {
@@ -563,6 +568,7 @@ body {
 
 .notebooks .notebooks__grilla .notebooks__grillaImg1 {
   margin: 1rem;
+  margin-bottom: 3rem;
 }
 
 .notebooks .notebooks__grilla .notebooks__grillaImg1:hover {
@@ -579,6 +585,7 @@ body {
 
 .notebooks .notebooks__grilla .notebooks__grillaImg2 {
   margin: 1rem;
+  margin-bottom: 3rem;
 }
 
 .notebooks .notebooks__grilla .notebooks__grillaImg2:hover {
