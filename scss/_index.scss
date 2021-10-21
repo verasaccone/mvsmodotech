@@ -60,19 +60,19 @@ body {
     .productos__grilla {
         display: grid;
         grid-template-areas:
-            "productos__grillaSubtitle1 productos__grillaSubtitle2"
-            "productos__grillaImg1 productos__grillaImg2"
+            "subtitle1 Subtitle2"
+            "Img1 Img2"
             "productos__grillaSubtitle3 productos__grillaSubtitle4"
             "productos__grillaImg3 productos__grillaImg4";
         grid-template-columns: 50% 50%;
         font-size: 3rem;
 
         .productos__grillaSubtitle1 {
-            grid-area: productos__grillaSubtitle1;
+            grid-area: subtitle1;
         }
 
         .productos__grillaSubtitle2 {
-            grid-area: productos__grillaSubtitle2;
+            grid-area: subtitle2;
         }
 
         .productos__grillaSubtitle3 {
@@ -84,11 +84,11 @@ body {
         }
 
         .productos__grillaImg1 {
-            grid-area: productos__grillaImg1;
+            grid-area: Img1;
         }
 
         .productos__grillaImg2 {
-            grid-area: productos__grillaImg2;
+            grid-area: Img2;
         }
 
         .productos__grillaImg3 {

@@ -86,7 +86,7 @@ body {
 .productos .productos__grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "productos__grillaSubtitle1 productos__grillaSubtitle2" "productos__grillaImg1 productos__grillaImg2" "productos__grillaSubtitle3 productos__grillaSubtitle4" "productos__grillaImg3 productos__grillaImg4";
+      grid-template-areas: "subtitle1 Subtitle2" "Img1 Img2" "productos__grillaSubtitle3 productos__grillaSubtitle4" "productos__grillaImg3 productos__grillaImg4";
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   font-size: 3rem;
@@ -95,13 +95,11 @@ body {
 .productos .productos__grilla .productos__grillaSubtitle1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: productos__grillaSubtitle1;
+  grid-area: subtitle1;
 }
 
 .productos .productos__grilla .productos__grillaSubtitle2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: productos__grillaSubtitle2;
+  grid-area: subtitle2;
 }
 
 .productos .productos__grilla .productos__grillaSubtitle3 {
@@ -119,13 +117,13 @@ body {
 .productos .productos__grilla .productos__grillaImg1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: productos__grillaImg1;
+  grid-area: Img1;
 }
 
 .productos .productos__grilla .productos__grillaImg2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: productos__grillaImg2;
+  grid-area: Img2;
 }
 
 .productos .productos__grilla .productos__grillaImg3 {
