@@ -4,66 +4,57 @@
     margin-top: 3rem;
 }
 
-.linkNotebooks {
-    .linkNotebooks__title {
-        color: black;
-        font-size: 3rem;
-        font-family: $JosefinSans;
-        text-align: center;
+.notebooks {
+    font-family: $JosefinSans;
+    color: black;
+    text-align: center;
+
+    .notebooks__title {
+        font-size: 4rem;
     }
 
-    .linkNotebooks__grilla {
+    .notebooks__grilla {
         display: grid;
         grid-template-areas:
-            "linkNotebooks__grillaSubtitle1 linkNotebooks__grillaSubtitle2"
-            "linkNotebooks__grillaImg1 linkNotebooks__grillaImg2";
+            "nSubtitle1 nSubtitle2"
+            "nImg1 nImg2";
         grid-template-columns: 50% 50%;
-        grid-template-rows: 30% 70%;
-        color: black;
         font-size: 2rem;
-        font-family: $JosefinSans;
 
-        .linkNotebooks__grillaSubtitle1 {
-            grid-area: linkNotebooks__grillaSubtitle1;
+        .notebooks__grillaSubtitle1 {
+            grid-area: nSubtitle1;
         }
 
-        .linkNotebooks__grillaSubtitle2 {
-            grid-area: linkNotebooks__grillaSubtitle2;
+        .notebooks__grillaSubtitle2 {
+            grid-area: nSubtitle2;
         }
 
-        .linkNotebooks__grillaImg1 {
-            grid-area: linkNotebooks__grillaImg1;
-
-            img {
-                width: 20rem;
-                border: 0.5rem solid $gris;
-                margin: 4rem;
-            }
-
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.1, 1.1);
-                transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-            }
+        .notebooks__grillaImg1 {
+            grid-area: nImg1;
         }
 
-        .linkNotebooks__grillaImg2 {
-            grid-area: linkNotebooks__grillaImg2;
+        .notebooks__grillaImg2 {
+            grid-area: nImg2;
+        }
 
-            img {
-                width: 20rem;
-                border: 0.5rem solid $gris;
-                margin: 4rem;
-            }
+        @for $i from 1 through 2 {
+            .notebooks__grillaImg#{$i} {
+                margin: 1rem;
 
-            &:hover {
-                cursor: pointer;
-                transform: scale(1.1, 1.1);
-                transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1, 1.1);
+                    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                }
+
+                img {
+                    border: 0.3rem solid $gris;
+                }
             }
         }
     }
 }
+
 
 .tablaCaracteristicas {
     .tablaCaracteristicas__title {

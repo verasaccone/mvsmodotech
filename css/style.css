@@ -518,51 +518,54 @@ body {
   margin-top: 3rem;
 }
 
-.linkNotebooks .linkNotebooks__title {
-  color: black;
-  font-size: 3rem;
+.notebooks {
   font-family: "Josefin Sans", sans-serif;
+  color: black;
   text-align: center;
 }
 
-.linkNotebooks .linkNotebooks__grilla {
+.notebooks .notebooks__title {
+  font-size: 4rem;
+}
+
+.notebooks .notebooks__grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "linkNotebooks__grillaSubtitle1 linkNotebooks__grillaSubtitle2" "linkNotebooks__grillaImg1 linkNotebooks__grillaImg2";
+      grid-template-areas: "nSubtitle1 nSubtitle2" "nImg1 nImg2";
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 30% 70%;
-      grid-template-rows: 30% 70%;
-  color: black;
   font-size: 2rem;
-  font-family: "Josefin Sans", sans-serif;
 }
 
-.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaSubtitle1 {
+.notebooks .notebooks__grilla .notebooks__grillaSubtitle1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: linkNotebooks__grillaSubtitle1;
+  grid-area: nSubtitle1;
 }
 
-.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaSubtitle2 {
+.notebooks .notebooks__grilla .notebooks__grillaSubtitle2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: linkNotebooks__grillaSubtitle2;
+  grid-area: nSubtitle2;
 }
 
-.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg1 {
+.notebooks .notebooks__grilla .notebooks__grillaImg1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: linkNotebooks__grillaImg1;
+  grid-area: nImg1;
 }
 
-.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg1 img {
-  width: 20rem;
-  border: 0.5rem solid #6666;
-  margin: 4rem;
+.notebooks .notebooks__grilla .notebooks__grillaImg2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: nImg2;
 }
 
-.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg1:hover {
+.notebooks .notebooks__grilla .notebooks__grillaImg1 {
+  margin: 1rem;
+}
+
+.notebooks .notebooks__grilla .notebooks__grillaImg1:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -570,24 +573,24 @@ body {
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 
-.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: linkNotebooks__grillaImg2;
+.notebooks .notebooks__grilla .notebooks__grillaImg1 img {
+  border: 0.3rem solid #6666;
 }
 
-.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg2 img {
-  width: 20rem;
-  border: 0.5rem solid #6666;
-  margin: 4rem;
+.notebooks .notebooks__grilla .notebooks__grillaImg2 {
+  margin: 1rem;
 }
 
-.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg2:hover {
+.notebooks .notebooks__grilla .notebooks__grillaImg2:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.notebooks .notebooks__grilla .notebooks__grillaImg2 img {
+  border: 0.3rem solid #6666;
 }
 
 .tablaCaracteristicas .tablaCaracteristicas__title {
