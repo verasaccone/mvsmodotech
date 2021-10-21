@@ -73,27 +73,122 @@ body {
   background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
 }
 
-.linksIndex .linkIndex__notebooks .linkIndex_placas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1rem;
+.productos {
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
 }
 
-.linksIndex .linkIndex__notebooks .linkIndex_placas img {
-  width: 30rem;
+.productos .productos__title {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.productos .productos__grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "productos__grillaSubtitle1 productos__grillaSubtitle2" "productos__grillaImg1 productos__grillaImg2" "productos__grillaSubtitle3 productos__grillaSubtitle4" "productos__grillaImg3 productos__grillaImg4";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  font-size: 3rem;
+}
+
+.productos .productos__grilla .productos__grillaSubtitle1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: productos__grillaSubtitle1;
+}
+
+.productos .productos__grilla .productos__grillaSubtitle2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: productos__grillaSubtitle2;
+}
+
+.productos .productos__grilla .productos__grillaSubtitle3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: productos__grillaSubtitle3;
+}
+
+.productos .productos__grilla .productos__grillaSubtitle4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: productos__grillaSubtitle4;
+}
+
+.productos .productos__grilla .productos__grillaImg1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: productos__grillaImg1;
+}
+
+.productos .productos__grilla .productos__grillaImg2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: productos__grillaImg2;
+}
+
+.productos .productos__grilla .productos__grillaImg3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: productos__grillaImg3;
+}
+
+.productos .productos__grilla .productos__grillaImg4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: productos__grillaImg4;
+}
+
+.productos .productos__grilla .productos__grillaImg-1 {
+  width: 2rem;
   border: 0.5rem solid #6666;
   margin: 4rem;
 }
 
-.linksIndex .linkIndex__notebooks .linkIndex_placas img:hover {
+.productos .productos__grilla .productos__grillaImg-1:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.productos .productos__grilla .productos__grillaImg-2 {
+  width: 2rem;
+  border: 0.5rem solid #6666;
+  margin: 4rem;
+}
+
+.productos .productos__grilla .productos__grillaImg-2:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.productos .productos__grilla .productos__grillaImg-3 {
+  width: 2rem;
+  border: 0.5rem solid #6666;
+  margin: 4rem;
+}
+
+.productos .productos__grilla .productos__grillaImg-3:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.productos .productos__grilla .productos__grillaImg-4 {
+  width: 2rem;
+  border: 0.5rem solid #6666;
+  margin: 4rem;
+}
+
+.productos .productos__grilla .productos__grillaImg-4:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -193,24 +288,64 @@ body {
   text-align: center;
 }
 
-.linkPlacas .linkPlacas__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1rem;
-  height: 60vh;
+.linkPlacas .linkPlacas__grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "linkPlacas__grillaSubtitle1 linkPlacas__grillaSubtitle2" "linkPlacas__grillaImg1 linkPlacas__grillaImg2";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 30% 70%;
+      grid-template-rows: 30% 70%;
+  color: black;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.linkPlacas .linkPlacas__img img {
-  width: 30rem;
+.linkPlacas .linkPlacas__grilla .linkPlacas__grillaSubtitle1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: linkPlacas__grillaSubtitle1;
+}
+
+.linkPlacas .linkPlacas__grilla .linkPlacas__grillaSubtitle2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: linkPlacas__grillaSubtitle2;
+}
+
+.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: linkPlacas__grillaImg1;
+}
+
+.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg1 img {
+  width: 20rem;
   border: 0.5rem solid #6666;
   margin: 4rem;
 }
 
-.linkPlacas .linkPlacas__img img:hover {
+.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg1:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: linkPlacas__grillaImg2;
+}
+
+.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg2 img {
+  width: 20rem;
+  border: 0.5rem solid #6666;
+  margin: 4rem;
+}
+
+.linkPlacas .linkPlacas__grilla .linkPlacas__grillaImg2:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -382,24 +517,64 @@ body {
   text-align: center;
 }
 
-.linkNotebooks .linkNotebooks__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1rem;
-  height: 60vh;
+.linkNotebooks .linkNotebooks__grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "linkNotebooks__grillaSubtitle1 linkNotebooks__grillaSubtitle2" "linkNotebooks__grillaImg1 linkNotebooks__grillaImg2";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 30% 70%;
+      grid-template-rows: 30% 70%;
+  color: black;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.linkNotebooks .linkNotebooks__img img {
-  width: 30rem;
+.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaSubtitle1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: linkNotebooks__grillaSubtitle1;
+}
+
+.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaSubtitle2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: linkNotebooks__grillaSubtitle2;
+}
+
+.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: linkNotebooks__grillaImg1;
+}
+
+.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg1 img {
+  width: 20rem;
   border: 0.5rem solid #6666;
   margin: 4rem;
 }
 
-.linkNotebooks .linkNotebooks__img img:hover {
+.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg1:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: linkNotebooks__grillaImg2;
+}
+
+.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg2 img {
+  width: 20rem;
+  border: 0.5rem solid #6666;
+  margin: 4rem;
+}
+
+.linkNotebooks .linkNotebooks__grilla .linkNotebooks__grillaImg2:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
