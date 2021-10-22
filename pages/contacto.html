@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactate con MODOTECH y te asesoraremos sobre cómo armar tu computadora o tu rig de minería.">
+    <meta name="description"
+        content="Contactate con MODOTECH y te asesoraremos sobre cómo armar tu computadora o tu rig de minería.">
     <meta name="keywords" content="INFORMATICA, COMPONENTES, PLACAS DE VIDEO, NOTEBOOKS, GAMER, MINERIA, SANTA FE">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -53,8 +54,17 @@
                                         Creator</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="componentes.html">Componentes</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="pages/componentes.html"
+                                id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                                Componentes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="pages/subitem_adataSU630.html">SSD ADATA SU630
+                                        SATAIII</a></li>
+                                <li><a class="dropdown-item" href="pages/subitem_adataS70.html">SSD ADATA NVME GAMMIX
+                                        S70</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -74,10 +84,12 @@
         <p>Complete este formulario si desea que nos contactemos</p>
         <form>
             <div>
-                <input required name="nombre" id="nombre" type="text" class="formularioContacto__datos" placeholder="Nombre y Apellido:">
+                <input required name="nombre" id="nombre" type="text" class="formularioContacto__datos"
+                    placeholder="Nombre y Apellido:">
             </div>
             <div>
-                <input required name="email" id="email" type="email" class="formularioContacto__datos" placeholder="Mail:">
+                <input required name="email" id="email" type="email" class="formularioContacto__datos"
+                    placeholder="Mail:">
             </div>
             <div>
                 <label for="provincia">Seleccione su provincia:</label>
@@ -109,8 +121,8 @@
             </div>
 
             <div>
-                <textarea required name="consulta" id="consulta" cols="50" rows="20" maxlength="250" class="formularioContacto__datos"
-                    placeholder="Indique su consulta:"></textarea>
+                <textarea required name="consulta" id="consulta" cols="50" rows="20" maxlength="250"
+                    class="formularioContacto__datos" placeholder="Indique su consulta:"></textarea>
             </div>
 
             <div>
@@ -150,4 +162,5 @@
     </footer>
     <script src="../js/bootstrap.min.js"></script>
 </body>
+
 </html>
