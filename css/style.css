@@ -779,47 +779,190 @@ body {
   width: 6rem;
 }
 
-.box-1 {
-  width: 50rem;
-  background-color: #19a49c;
-  color: #ffffff;
-  margin-bottom: 2rem;
-  font-size: 3rem;
+.componentes {
   font-family: "Josefin Sans", sans-serif;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  color: black;
   text-align: center;
 }
 
-.box-2 {
-  width: 50rem;
-  background-color: #19a49c;
-  color: #ffffff;
-  margin-bottom: 2rem;
+.componentes .componentes__title {
   font-size: 3rem;
-  font-family: "Josefin Sans", sans-serif;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
 }
 
-.box-3 {
-  width: 50rem;
-  background-color: #19a49c;
-  color: #ffffff;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-family: "Josefin Sans", sans-serif;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
+.componentes .componentes__grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "cSubtitle1 cSubtitle2" "cImg1 cImg2";
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  font-size: 2rem;
 }
 
-.box-3 {
-  margin-bottom: 5rem;
+.componentes .componentes__grilla .componentes__grillaSubtitle1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cSubtitle1;
+}
+
+.componentes .componentes__grilla .componentes__grillaSubtitle2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cSubtitle2;
+}
+
+.componentes .componentes__grilla .componentes__grillaImg1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cImg1;
+}
+
+.componentes .componentes__grilla .componentes__grillaImg2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cImg2;
+}
+
+.componentes .componentes__grilla .componentes__grillaImg1 {
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.componentes .componentes__grilla .componentes__grillaImg1:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.componentes .componentes__grilla .componentes__grillaImg1 img {
+  border: 0.3rem solid #6666;
+}
+
+.componentes .componentes__grilla .componentes__grillaImg2 {
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.componentes .componentes__grilla .componentes__grillaImg2:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.componentes .componentes__grilla .componentes__grillaImg2 img {
+  border: 0.3rem solid #6666;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__title {
+  display: block;
+  font-size: 3rem;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "tablaCaracteristicas__imagesLeft tablaCaracteristicas__contenido tablaCaracteristicas__imagesRight";
+  -ms-grid-columns: 20% 50% 20%;
+      grid-template-columns: 20% 50% 20%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__imagesLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  color: black;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: tablaCaracteristicas__imagesLeft;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__imagesLeft img {
+  width: 20rem;
+  border: 0.5rem solid #6666;
+  margin: 4rem;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__imagesRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  color: black;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: tablaCaracteristicas__imagesRight;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__imagesRight img {
+  width: 20rem;
+  border: 0.5rem solid #6666;
+  margin: 4rem;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: tablaCaracteristicas__contenido;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__box-201 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla img {
+  width: 7rem;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__box-202 {
+  width: 50rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__grilla img {
+  width: 7rem;
 }
 
 .error404 {

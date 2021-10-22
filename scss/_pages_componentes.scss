@@ -1,17 +1,127 @@
-@for $i from 1 through 3 {
-    .box-#{$i} {
-        width: 50rem;
-        background-color: $celeste;
-        color: $blanco;
-        margin-bottom: 2rem;
-        font-size: 3rem;
-        font-family: $JosefinSans;
-        align-self: center;
-        text-align: center;
+.componentes {
+    font-family: $JosefinSans;
+    color: black;
+    text-align: center;
 
+    .componentes__title {
+        font-size: 3rem;
+    }
+
+    .componentes__grilla {
+        display: grid;
+        grid-template-areas:
+            "cSubtitle1 cSubtitle2"
+            "cImg1 cImg2";
+        grid-template-columns: 50% 50%;
+        font-size: 2rem;
+        
+        .componentes__grillaSubtitle1 {
+            grid-area: cSubtitle1;
+        }
+
+        .componentes__grillaSubtitle2 {
+            grid-area: cSubtitle2;
+        }
+
+        .componentes__grillaImg1 {
+            grid-area: cImg1;
+        }
+
+        .componentes__grillaImg2 {
+            grid-area: cImg2;
+        }
+
+        @for $i from 1 through 2 {
+            .componentes__grillaImg#{$i} {
+                margin: 1rem;
+                margin-bottom: 3rem;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1, 1.1);
+                    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                }
+
+                img {
+                    border: 0.3rem solid $gris;
+                }
+            }
+        }
     }
 }
 
-.box-3 {
-    margin-bottom: 5rem;
+
+.tablaCaracteristicas {
+    .tablaCaracteristicas__title {
+        display: block;
+        font-size: 3rem;
+        background: rgb(250, 250, 250);
+        background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+        color: black;
+        font-family: $JosefinSans;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .tablaCaracteristicas__grilla {
+        display: grid;
+        grid-template-areas:
+            "tablaCaracteristicas__imagesLeft tablaCaracteristicas__contenido tablaCaracteristicas__imagesRight";
+        grid-template-columns: 20% 50% 20%;
+        grid-template-rows: 100%;
+
+        .tablaCaracteristicas__imagesLeft {
+            display: flex;
+            flex-direction: column;
+            background: rgb(250, 250, 250);
+            background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+            color: black;
+            grid-area: tablaCaracteristicas__imagesLeft;
+
+            img {
+                width: 20rem;
+                border: 0.5rem solid $gris;
+                margin: 4rem;
+            }
+        }
+
+        .tablaCaracteristicas__imagesRight {
+            display: flex;
+            flex-direction: column;
+            background: rgb(250, 250, 250);
+            background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+            color: black;
+            grid-area: tablaCaracteristicas__imagesRight;
+
+            img {
+                width: 20rem;
+                border: 0.5rem solid $gris;
+                margin: 4rem;
+            }
+        }
+
+        .tablaCaracteristicas__contenido {
+            display: flex;
+            flex-flow: row wrap;
+            background: rgb(250, 250, 250);
+            background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+            color: black;
+            font-family: $JosefinSans;
+            justify-content: center;
+            grid-area: tablaCaracteristicas__contenido;
+        }
+
+        @for $i from 201 through 202 {
+            .tablaCaracteristicas__box-#{$i} {
+                width: 50rem;
+                margin: 1rem;
+                font-size: 2rem;
+            }
+
+            img {
+                width: 7rem;
+            }
+        }
+
+    }
 }
