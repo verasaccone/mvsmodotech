@@ -131,4 +131,210 @@
     }
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+
+     /*index*/
+
+     .header__bannerAnimado {
+        width: 100%;
+        max-width: 300px;
+        align-self: center;
+        margin: 1rem;
+    }
+
+    .productos {
+        text-align: center;
+
+        .productos__title {
+            font-size: 2rem;
+        }
+
+        .productos__grilla {
+            font-size: 1rem;
+
+            @for $i from 1 through 6 {
+                .productos__grillaImg#{$i} {
+                    width: 100%;
+                    max-width: 150px;
+                    margin: 0.75rem;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+
+    .quienesSomos {
+        font-size: 1rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+
+        .quienesSomos__title {
+            font-size: 2rem;
+        }
+    }
+
+    /*pages contacto*/
+
+    .formularioContacto {
+        width: 30rem;
+        padding: 2px;
+
+        .formularioContacto__datos {
+            font-size: 1rem;
+            width: 27rem;
+        }
+
+        .formularioContacto__boton {
+            font-size: 2rem;
+            height: 5rem;
+            width: 10rem;
+        }
+    }
+
+    /*pages placas de video*/
+
+    .placas {
+        text-align: center;
+
+        .placas__title {
+            font-size: 2rem;
+        }
+
+        .placas__grilla {
+            font-size: 1rem;
+
+            @for $i from 1 through 2 {
+                .placas__grillaImg#{$i} {
+                    width: 100%;
+                    max-width: 150px;
+                    margin: 0.5rem;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+
+    .tablaCaracteristicas {
+        .tablaCaracteristicas__title {
+            font-size: 2rem;
+        }
+
+        .tablaCaracteristicas__grilla {
+            display: grid;
+            grid-template-areas:
+                "tablaCaracteristicas__images" 
+                "tablaCaracteristicas__contenido";
+            grid-template-rows: 30% 70%;
+            grid-template-columns: 100%;
+            text-align: center;
+
+            .tablaCaracteristicas__images {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+    
+                img {
+                    width: 12rem;
+                    border: 0.2rem solid $gris;
+                    margin: 0.5rem;
+                }
+            }
+
+            .tablaCaracteristicas__contenido {
+           
+                @for $i from 101 through 106 {
+                    .tablaCaracteristicas__box-#{$i} {
+                        width: 12rem;
+                        margin: 0.2rem;
+                        font-size: 1rem;
+                    }
+            
+                    img {
+                        width: 4rem;
+                    }
+                }  
+            }
+        }
+    }
+
+    /*pages notebooks*/
+
+    .notebooks {
+        text-align: center;
+
+        .notebooks__title {
+            font-size: 2rem;
+        }
+
+        .notebooks__grilla {
+            font-size: 1rem;
+
+            @for $i from 1 through 2 {
+                .notebooks__grillaImg#{$i} {
+                    width: 100%;
+                    max-width: 150px;
+                    margin: 0.5rem;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+
+    .tablaCaracteristicas {
+        .tablaCaracteristicas__contenido {
+           
+            @for $i from 1 through 9 {
+                .tablaCaracteristicas__box-#{$i} {
+                    width: 12rem;
+                    margin: 0.2rem;
+                    font-size: 1rem;
+                }
+        
+                img {
+                    width: 4rem;
+                }
+            }  
+        }
+    }
+   
+
+    /*pages componentes*/
+
+    .componentes {
+        text-align: center;
+
+        .componentes__title {
+            font-size: 2rem;
+        }
+
+        .componentes__grilla {
+            font-size: 1rem;
+
+            @for $i from 1 through 2 {
+                .componentes__grillaImg#{$i} {
+                    width: 100%;
+                    max-width: 150px;
+                    margin: 0.5rem;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+
+    .tablaCaracteristicas {
+        .tablaCaracteristicas__contenido {
+           
+            @for $i from 201 through 202 {
+                .tablaCaracteristicas__box-#{$i} {
+                    width: 12rem;
+                    margin: 0.2rem;
+                    font-size: 1rem;
+                }
+        
+                img {
+                    width: 4rem;
+                }
+            }  
+        }
+    }
+}
