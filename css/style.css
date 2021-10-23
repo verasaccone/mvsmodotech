@@ -86,7 +86,7 @@ body {
 .productos .productos__grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "Subtitle1 Subtitle2" "Img1 Img2" "Subtitle3 Subtitle4" "Img3 Img4";
+      grid-template-areas: "Subtitle1 Subtitle2" "Img1 Img2" "Subtitle3 Subtitle4" "Img3 Img4" "Subtitle5 Subtitle6" "Img5 Img6";
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   font-size: 2rem;
@@ -116,6 +116,18 @@ body {
   grid-area: Subtitle4;
 }
 
+.productos .productos__grilla .productos__grillaSubtitle5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: Subtitle5;
+}
+
+.productos .productos__grilla .productos__grillaSubtitle6 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: Subtitle6;
+}
+
 .productos .productos__grilla .productos__grillaImg1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -140,8 +152,23 @@ body {
   grid-area: Img4;
 }
 
+.productos .productos__grilla .productos__grillaImg5 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: Img5;
+}
+
+.productos .productos__grilla .productos__grillaImg6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: Img6;
+}
+
 .productos .productos__grilla .productos__grillaImg1 {
+  width: 300px;
   margin: 1rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .productos .productos__grilla .productos__grillaImg1:hover {
@@ -157,7 +184,10 @@ body {
 }
 
 .productos .productos__grilla .productos__grillaImg2 {
+  width: 300px;
   margin: 1rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .productos .productos__grilla .productos__grillaImg2:hover {
@@ -173,7 +203,10 @@ body {
 }
 
 .productos .productos__grilla .productos__grillaImg3 {
+  width: 300px;
   margin: 1rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .productos .productos__grilla .productos__grillaImg3:hover {
@@ -189,7 +222,10 @@ body {
 }
 
 .productos .productos__grilla .productos__grillaImg4 {
+  width: 300px;
   margin: 1rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .productos .productos__grilla .productos__grillaImg4:hover {
@@ -201,6 +237,44 @@ body {
 }
 
 .productos .productos__grilla .productos__grillaImg4 img {
+  border: 0.3rem solid #6666;
+}
+
+.productos .productos__grilla .productos__grillaImg5 {
+  width: 300px;
+  margin: 1rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.productos .productos__grilla .productos__grillaImg5:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.productos .productos__grilla .productos__grillaImg5 img {
+  border: 0.3rem solid #6666;
+}
+
+.productos .productos__grilla .productos__grillaImg6 {
+  width: 300px;
+  margin: 1rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.productos .productos__grilla .productos__grillaImg6:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.productos .productos__grilla .productos__grillaImg6 img {
   border: 0.3rem solid #6666;
 }
 
@@ -978,95 +1052,115 @@ body {
   font-size: 5rem;
 }
 
-@media (max-width: 600px) {
-  /*comienzo diseño index.html*/
+@media (max-width: 768px) {
+  /*index*/
   .header__bannerAnimado {
-    width: 600 px/2;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  /* comienzo diseño contacto.html*/
-  .formularioContacto {
-    width: 600 px/3;
-    padding: 5px;
-  }
-  .formularioContacto .formularioContacto__datos {
-    width: 45rem;
-  }
-  /* comienzo diseño placas_video.html y notebooks.html */
-  .linkPlacas__img,
-  .linkNotebooks__img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0.5rem;
-    height: 70vh;
-  }
-  .header__carousel {
-    width: 400px;
-  }
-  .container {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 400px) {
-  .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100vh;
-  }
-  .header .header__bannerAnimado {
-    width: 600 px/4;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  /*diseño contacto.html*/
-  .formularioContacto {
-    width: 35rem;
-    padding: 5px;
-  }
-  .formularioContacto .formularioContacto__datos {
-    width: 30rem;
-  }
-  /*diseño placas_video.html y notebooks.html*/
-  .linkPlacas__img,
-  .linkNotebooks__img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     margin: 1rem;
-    height: 40vh;
   }
-  .linkPlacas__img img,
-  .linkNotebooks__img img {
-    width: 15rem;
-    border: 0.5rem solid #6666;
-    margin: 2rem;
+  .productos {
+    text-align: center;
   }
-  .header__carousel {
-    width: 250px;
+  .productos .productos__title {
+    font-size: 3rem;
   }
-  .container {
-    font-size: 50%;
+  .productos .productos__grilla .productos__grillaImg1 {
+    width: 100%;
+    max-width: 150px;
+    margin: 0.75rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
-  /*diseño componentes.html*/
-  .proximamente {
-    margin-top: 2rem;
+  .productos .productos__grilla .productos__grillaImg2 {
+    width: 100%;
+    max-width: 150px;
+    margin: 0.75rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .productos .productos__grilla .productos__grillaImg3 {
+    width: 100%;
+    max-width: 150px;
+    margin: 0.75rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .productos .productos__grilla .productos__grillaImg4 {
+    width: 100%;
+    max-width: 150px;
+    margin: 0.75rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .productos .productos__grilla .productos__grillaImg5 {
+    width: 100%;
+    max-width: 150px;
+    margin: 0.75rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .productos .productos__grilla .productos__grillaImg6 {
+    width: 100%;
+    max-width: 150px;
+    margin: 0.75rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .quienesSomos {
+    font-size: 1rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+  }
+  .quienesSomos .quienesSomos__title {
+    font-size: 2rem;
+  }
+  /*pages contacto*/
+  .formularioContacto {
+    width: 70rem;
+    padding: 30px;
+  }
+  .formularioContacto .formularioContacto__datos {
+    width: 60rem;
+  }
+  /*pages placas de video*/
+  .placas {
+    text-align: center;
+  }
+  .placas .placas__title {
+    font-size: 3rem;
+  }
+  .placas .placas__grilla .placas__grillaImg1 {
+    width: 100%;
+    max-width: 150px;
+    margin: 0.75rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .placas .placas__grilla .placas__grillaImg2 {
+    width: 100%;
+    max-width: 150px;
+    margin: 0.75rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .tablaCaracteristicas .tablaCaracteristicas__grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "tablaCaracteristicas__imagesLeft tablaCaracteristicas__contenido";
+    -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+  }
+  .tablaCaracteristicas .tablaCaracteristicas__imagesRight {
+    display: hide;
+  }
+  .tablaCaracteristicas .tablaCaracteristicas__contenido {
+    -ms-flex-item-align: right;
+        -ms-grid-row-align: right;
+        align-self: right;
   }
 }
 /*# sourceMappingURL=style.css.map */

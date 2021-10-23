@@ -1,95 +1,93 @@
-$ancho:600 px;
+@media (max-width: 768px) {
 
-@media (max-width: 600px) {
-    /*comienzo diseño index.html*/
+    /*index*/
 
     .header__bannerAnimado {
-        width: $ancho/2;
-        justify-self: center;
-    }
-
-
-    /* comienzo diseño contacto.html*/
-
-    .formularioContacto {
-        width: $ancho/3;
-        padding: 5px;
-
-        .formularioContacto__datos {
-            width: 45rem;
-        }
-    }
-
-    /* comienzo diseño placas_video.html y notebooks.html */
-
-    .linkPlacas__img,
-    .linkNotebooks__img {
-        display: flex;
-        justify-content: center;
-        margin: 0.5rem;
-        height: 70vh;
-    }
-
-    .header__carousel {
-        width: 400px;
-    }
-
-    .container {
-        font-size: 50%;
-    }
-}
-
-@media (max-width: 400px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100vh;
-
-        .header__bannerAnimado {
-            width: $ancho/4;
-            justify-self: center;
-        }
-    }
-
-    /*diseño contacto.html*/
-
-    .formularioContacto {
-        width: 35rem;
-        padding: 5px;
-
-        .formularioContacto__datos {
-            width: 30rem;
-        }
-    }
-
-    /*diseño placas_video.html y notebooks.html*/
-
-    .linkPlacas__img,
-    .linkNotebooks__img {
-        display: flex;
-        justify-content: center;
+        width: 100%;
+        max-width: 500px;
+        align-self: center;
         margin: 1rem;
-        height: 40vh;
+    }
 
-        img {
-            width: 15rem;
-            border: 0.5rem solid #6666;
-            margin: 2rem;
+    .productos {
+        text-align: center;
+
+        .productos__title {
+            font-size: 3rem;
+        }
+
+        .productos__grilla {
+
+            @for $i from 1 through 6 {
+                .productos__grillaImg#{$i} {
+                    width: 100%;
+                    max-width: 150px;
+                    margin: 0.75rem;
+                    justify-self: center;
+                }
+            }
         }
     }
 
-    .header__carousel {
-        width: 250px;
+    .quienesSomos {
+        font-size: 1rem;
+        padding: 3rem;
+        margin-bottom: 3rem;
+
+        .quienesSomos__title {
+            font-size: 2rem;
+        }
     }
 
-    .container {
-        font-size: 50%;
+    /*pages contacto*/
+
+    .formularioContacto {
+        width: 70rem;
+        padding: 30px;
+
+        .formularioContacto__datos {
+            width: 60rem;
+        }
     }
 
-    /*diseño componentes.html*/
+    /*pages placas de video*/
 
-    .proximamente {
-        margin-top: 2rem;
+    .placas {
+        text-align: center;
+
+        .placas__title {
+            font-size: 3rem;
+        }
+
+        .placas__grilla {
+
+            @for $i from 1 through 2 {
+                .placas__grillaImg#{$i} {
+                    width: 100%;
+                    max-width: 150px;
+                    margin: 0.75rem;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+
+    .tablaCaracteristicas {
+        .tablaCaracteristicas__grilla {
+            display: grid;
+            grid-template-areas:
+            "tablaCaracteristicas__imagesLeft tablaCaracteristicas__contenido";
+            grid-template-columns: 30% 70%;
+        }
+
+        .tablaCaracteristicas__imagesRight {
+            display: hide;
+        }
+
+        .tablaCaracteristicas__contenido {
+            align-self: right;
+        }
     }
 }
+
+@media (max-width: 320px) {}
