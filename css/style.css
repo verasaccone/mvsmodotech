@@ -369,9 +369,7 @@ body {
 .tablaCaracteristicas .tablaCaracteristicas__title {
   display: block;
   font-size: 3rem;
-  background: #fafafa;
-  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
-  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  background: white;
   color: black;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
@@ -396,9 +394,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fafafa;
-  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
-  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  background: white;
   color: black;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -419,9 +415,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fafafa;
-  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
-  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  background: white;
   color: black;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -442,9 +436,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background: #fafafa;
-  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
-  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  background: white;
   color: black;
   font-family: "Josefin Sans", sans-serif;
   -webkit-box-pack: center;
@@ -600,12 +592,15 @@ body {
   border: 0.3rem solid #6666;
 }
 
-.tablaCaracteristicas .tablaCaracteristicas__title {
-  display: block;
-  font-size: 3rem;
+.tablaCaracteristicas {
   background: #fafafa;
   background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
   background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+}
+
+.tablaCaracteristicas .tablaCaracteristicas__title {
+  display: block;
+  font-size: 3rem;
   color: black;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
@@ -630,9 +625,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fafafa;
-  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
-  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
   color: black;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -653,9 +645,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fafafa;
-  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
-  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
   color: black;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -676,9 +665,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background: #fafafa;
-  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
-  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
   color: black;
   font-family: "Josefin Sans", sans-serif;
   -webkit-box-pack: center;
