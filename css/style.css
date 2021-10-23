@@ -298,28 +298,48 @@ body {
   margin: 0 1.5rem 0 0;
 }
 
-.footer .footer__redesContacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.footer {
   background: #fafafa;
   background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
   background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+}
+
+.footer .footer__redesContacto {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "whatsapp facebook instagram maps";
+  -ms-grid-columns: 10% 10% 10% 70%;
+      grid-template-columns: 10% 10% 10% 70%;
+}
+
+.footer .footer__redesContacto .footer__redesContactoW {
+  grid-area: whatsapp;
+  text-align: center;
+}
+
+.footer .footer__redesContacto .footer__redesContactoF {
+  grid-area: facebook;
+  text-align: center;
+}
+
+.footer .footer__redesContacto .footer__redesContactoI {
+  grid-area: instagram;
+  text-align: center;
+}
+
+.footer .footer__redesContacto .footer__redesContactoM {
+  grid-area: maps;
+  text-align: right;
+  margin-right: 3rem;
 }
 
 .footer .footer__volverInicio {
   display: block;
-  color: #ffffff;
+  color: black;
   text-transform: uppercase;
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .formularioContacto {
@@ -448,12 +468,17 @@ body {
   border: 0.3rem solid #6666;
 }
 
+.tablaCaracteristicas {
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .tablaCaracteristicas .tablaCaracteristicas__title {
   display: block;
   font-size: 3rem;
-  background: white;
-  color: black;
-  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   padding: 1rem;
 }
@@ -476,15 +501,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: white;
-  color: black;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tablaCaracteristicas__images;
 }
 
 .tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__images img {
-  width: 20rem;
+  width: 30rem;
   border: 0.5rem solid #6666;
   margin: 4rem;
 }
@@ -497,9 +520,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background: white;
-  color: black;
-  font-family: "Josefin Sans", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -653,12 +673,17 @@ body {
   border: 0.3rem solid #6666;
 }
 
+.tablaCaracteristicas {
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .tablaCaracteristicas .tablaCaracteristicas__title {
   display: block;
   font-size: 3rem;
-  background: white;
-  color: black;
-  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   padding: 1rem;
 }
@@ -681,15 +706,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: white;
-  color: black;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tablaCaracteristicas__images;
 }
 
 .tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__images img {
-  width: 20rem;
+  width: 30rem;
   border: 0.5rem solid #6666;
   margin: 4rem;
 }
@@ -702,9 +725,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background: white;
-  color: black;
-  font-family: "Josefin Sans", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -888,12 +908,17 @@ body {
   border: 0.3rem solid #6666;
 }
 
+.tablaCaracteristicas {
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(#edeaea));
+  background: linear-gradient(90deg, #fafafa 0%, #edeaea 100%);
+  color: black;
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .tablaCaracteristicas .tablaCaracteristicas__title {
   display: block;
   font-size: 3rem;
-  background: white;
-  color: black;
-  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   padding: 1rem;
 }
@@ -916,15 +941,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: white;
-  color: black;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: tablaCaracteristicas__images;
 }
 
 .tablaCaracteristicas .tablaCaracteristicas__grilla .tablaCaracteristicas__images img {
-  width: 20rem;
+  width: 30rem;
   border: 0.5rem solid #6666;
   margin: 4rem;
 }
@@ -937,9 +960,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background: white;
-  color: black;
-  font-family: "Josefin Sans", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -979,20 +999,21 @@ body {
   font-family: "Josefin Sans", sans-serif;
   color: black;
   letter-spacing: 0.4rem;
-  -ms-flex-item-align: center;
-      align-self: center;
+  text-align: center;
+  margin: 2rem;
+  height: 70vh;
 }
 
 .error404 h1 {
-  font-size: 10rem;
+  font-size: 4rem;
 }
 
 .error404 p {
-  font-size: 7rem;
+  font-size: 3rem;
 }
 
 .error404 a {
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {

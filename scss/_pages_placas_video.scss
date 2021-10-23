@@ -55,12 +55,14 @@
 
 
 .tablaCaracteristicas {
+    background: rgb(250, 250, 250);
+    background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(237, 234, 234, 1) 100%);
+    color: black;
+    font-family: $JosefinSans;
+
     .tablaCaracteristicas__title {
         display: block;
         font-size: 3rem;
-        background: white;
-        color: black;
-        font-family: $JosefinSans;
         text-align: center;
         padding: 1rem;
     }
@@ -75,12 +77,10 @@
         .tablaCaracteristicas__images {
             display: flex;
             flex-direction: column;
-            background: white;
-            color: black;
             grid-area: tablaCaracteristicas__images;
 
             img {
-                width: 20rem;
+                width: 30rem;
                 border: 0.5rem solid $gris;
                 margin: 4rem;
             }
@@ -90,9 +90,6 @@
     .tablaCaracteristicas__contenido {
         display: flex;
         flex-flow: row wrap;
-        background: white;
-        color: black;
-        font-family: $JosefinSans;
         justify-content: center;
         grid-area: tablaCaracteristicas__contenido;
     }
