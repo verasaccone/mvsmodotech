@@ -1280,8 +1280,6 @@ body {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "tablaCaracteristicas__images"  "tablaCaracteristicas__contenido";
-    -ms-grid-rows: 30% 70%;
-        grid-template-rows: 30% 70%;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     text-align: center;
